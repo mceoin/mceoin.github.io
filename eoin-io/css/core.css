@@ -1,0 +1,218 @@
+.clouds {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+#video {
+  opacity: 0;
+}
+
+.video-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  padding-left: 5em;
+}
+
+@media screen and (max-width: 49em) {
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.box {
+  background: #F5FAFA;
+  width: 100%;
+  max-width: 27em;
+  position: relative;
+}
+
+#side-box {
+  position: absolute;
+  padding-top: 2.5em;
+  top: 0;
+  left: 100%;
+  bottom: 0;
+  background-color: #F5FAFA;
+  width: 48%;
+
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+
+  transform: perspective(600) rotate3d(0,1,0,90deg);
+  -webkit-transform: perspective(600) rotate3d(0,1,0,90deg);
+  -moz-transform: perspective(600) rotate3d(0,1,0,90deg);
+
+  transform-origin: 0 50%;
+  -webkit-transform-origin: 0 50%;
+  -moz-transform-origin: 0 50%;
+}
+
+
+
+#side-box.open {
+  transform: perspective(600) rotate3d(0,1,0,0deg);
+  -webkit-transform: perspective(600) rotate3d(0,1,0,0deg);
+  -moz-transform: perspective(600) rotate3d(0,1,0,0deg);
+  -o-transform: perspective(600)rotate3d(0,1,0,0deg);
+}
+
+#side-box.animation-complete {
+}
+
+#side-box ul {
+  list-style: none;
+  margin: 25px 35px 0 5px;
+  padding: 0;
+  height: 352px;
+  width: 200px;
+  overflow-y: auto;
+}
+
+#side-box ul li {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: .9em;
+}
+
+#side-box ul li .date {
+  color: black;
+  display: block;
+  font-size: .8em;
+  padding-bottom: 3px;
+}
+
+#side-box ul li .project {
+  color: black;
+  display: block;
+  font-size: .8em;
+  padding-bottom: 3px;
+}
+
+
+.inner-box {
+  padding: 3.5em;
+  padding-bottom: 1.5em;
+}
+
+.subheader {
+  margin-bottom: 0;
+}
+
+.copy-one {
+  margin-top: 0;
+}
+
+.rule {
+  border-top: 1px solid #3AC3CE;
+  width: 3em;
+}
+
+.contact {
+  margin-top: 5em;
+}
+
+.blog {
+  display: block;
+  background: #06172F;
+  padding: 1.5em;
+  padding-left: 3.5em;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.anchor-bottom {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /*background: pink;*/
+}
+
+#arrow {
+  -webkit-transform:rotateY(0);
+  -moz-transform:rotateY(0);
+  -o-transform:rotateY(0);
+
+  display: block;
+  float: right;
+  font-size: .5em;
+  line-height: 2.7em;
+
+
+  transition: transform 0.28s;
+  -webkit-transition: -webkit-transform 0.28s;
+  -moz-transition: -moz-transform 0.28s;
+}
+
+#arrow.rotated {
+  -webkit-transform:rotateY(180deg);
+  -moz-transform:rotateY(180deg);
+  transform:rotateY(180deg);
+}
+
+#arrow:after{
+  clear: both;
+}
+
+
+@keyframes flash-text
+{
+  0%   {color: auto;}
+  50%  {color: #444;}
+  100% {color: auto;}
+}
+
+@-webkit-keyframes flash-text
+{
+  0%   {color: default;}
+  50%  {color: #000;}
+  100% {color: default;}
+}
+
+h1, p, div, a {
+  font-family: "Proxima Nova", Sans-Serif;
+  color: #06172F;
+}
+
+p {
+  font-size: .9em;
+  line-height: 1.4em;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+a {
+  color: #3AC3CE;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.logo {
+  width: 140px;
+}
