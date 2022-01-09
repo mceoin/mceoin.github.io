@@ -7,115 +7,17 @@
     <style type="text/css">.tk-proxima-nova{font-family:"proxima-nova",sans-serif;}.tk-tinos{font-family:"tinos",sans-serif;}.tk-nimbus-sans{font-family:"nimbus-sans",sans-serif;}</style><link rel="stylesheet" href="http://use.typekit.net/c/7eda61/1w;nimbus-sans,2,SKq:P:i4,SKs:P:i7,SKp:P:n4,Wlm:P:n7;proxima-nova,2,b5v:P:i3,b5x:P:i4,b61:P:i7,b5t:P:n3,b5w:P:n4,bBh:P:n7;tinos,2,Wcv:P:n4/d?3bb2a6e53c9684ffdc9a9aff1d5b2a62de246c40fc2071e052ac61eb39d9a5b91cf3c3f98880a1ac7cdf3802da21221bbfa68939d52ba2fc751cc7e5a54ddca6c57075327e0f1a5ca5c9cf0b63b67198b9eac338e14c2251b2dd3b6f3dead75483"><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <link rel="icon" href="./eoin-io/Eoin_Bubble_Favicon.ico">
   </head>
-  <body>
-    <div class="video-container">
-      <img src="./eoin-io/eoin-gold-2.jpg" class="clouds">
-     <!--  <video src="./eoin-io/video/dark-abstract.mp4" class="clouds" id="video" preload="auto" autoplay="autoplay" loop="loop" style="opacity: 1;"></video> -->
-    </div>
-    <div class="container">
-      <div class="box">
-        <div class="inner-box">
-          <h1>Eoin McMillan</h1>
-          <p class="copy-one">I'm a web developer and community organizer based in San Francisco, CA. Most of the time, you can find me working on projects at <a href="http://sfdevlabs.com">SF Dev Labs</a>.</p>
-          <p>I get excited about little things like APIs and data structures, and big things like how we can use technology to improve the human experience. </p>
-          <p>If you're working on an interesting project in business, life or code: get in touch.</p>
-          <div class="rule"></div>
-          <p><a href="mailto:eoin@sfdevlabs.com">eoin@sfdevlabs.com</a></p>
-          <!-- <div class="contact">
-            <img class="logo" src="">
-          </div> -->
+  <body style="margin: 0px;">
+    <div style="text-align: center; margin-top: 40px;">
+      <img src="eoin-mcmillan-caffe-trieste-chris-michel.jpg" style="width: 500px; max-width: 100%; margin: auto;">
+      <div style="width: 500px; max-width: 100%; margin: auto; display: flex;">
+        <div style="justify-content: flex-start; font-family: roboto; font-size: 10px">
+          <a href="twitter.com/mceoin">@mceoin</a>
         </div>
-        <a style="display: block; color: white;" id="blog-link" class="blog          " onclick="toggleDrawer(); flashText(&#39;blog-link&#39;);">
-          More &nbsp; <span id="arrow" class="">&#9654;</span>
-        </a>
-        <div id="side-box" class="closed">
-          <ul>
-            <li>
-              <a href="https://sourcetable.com" title="Sourcetable - spreadsheets with superpowers">
-                <span class="date">Founder</span>
-                  Sourcetable
-              </a>
-            </li>
-            <li>
-              <a href="http://sfdevlabs.com">
-                <span class="date">Partner</span>
-                SF Dev Labs
-              </a>
-            </li>
-            <li>
-              <a href="http://startuphouse.com">
-                <span class="date">Builder</span>
-                StartupHouse
-              </a>
-            </li>
-            <li>
-              <a href="http://startupbus.com">
-                <span class="date">Catalyst</span>
-                StartupBus Mexico
-              </a>
-            </li>
-            <li>
-              <a href="http://accessland.org">
-                <span class="date">Founding Member</span>
-                Access Land
-              </a>
-            </li>
-            <li>
-              <a href="http://eointhephotographer.tumblr.com/">
-                <span class="project">Miscellaneous</span>
-                Desktop Background
-              </a>
-              <span class="project"></span>
-              <a href="https://medium.com/@mceoin/a-map-of-the-internet-31dca416bcf5">
-                The Map
-              </a>
-              <span class="project"></span>
-              <a href="http://eoinsblog.tumblr.com">
-                Blog
-              </a>
-            </li>
-          </ul>
-          <div class="blog anchor-bottom">
-            &nbsp;
-          </div>
+        <div style="width: 100%"></div>
+        <div style="justify-content: flex-end; color: #6c757d; font-size: 10px; width: 175px;">photo credit: 
+          <a style="color: #6c757d;" href="twitter.com/chrismichel">@chrismichel</a>
         </div>
+      </div>
     </div>
-
-  <script>
-    // var video = document.getElementById('video');
-    var drawerState = false;
-    // video.addEventListener('play', function() {
-    //   console.log('showing video');
-    //   video.style.opacity = 1;
-    // });
-
-    window.flashText = function(target){
-      var flashMe = document.getElementById(target);
-      flashMe.className = flashMe.className + " flash-text";
-      setTimeout(function(){
-        flashMe.className = flashMe.className.replace("flash-text", '');
-      }, 400);
-    };
-
-    window.toggleDrawer = function(){
-      var box = document.getElementById("side-box");
-      var arrow = document.getElementById("arrow");
-      if(drawerState){
-        box.className = "closed";
-        arrow.className = "";
-      }else{
-        box.className = "open";
-        arrow.className = "rotated";
-      }
-
-      setTimeout(function(){
-        if(box.className == "open"){
-          box.className = box.className + " animation-complete";
-        }
-      }, 400);
-
-      drawerState = !drawerState;
-    };
-  </script>
-
-</div></body></html>
+</body></html>
